@@ -1,6 +1,15 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 var path = require('path');
+var build = require('webpack-build');
+
+build({
+    context: path.join(__dirname, "src"),
+    config: '/path/to/webpack.config.js',
+    watch: true
+}, function(err, data) {
+    // idk
+});
 
 module.exports = {
   context: path.join(__dirname, "src"),
