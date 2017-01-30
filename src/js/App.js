@@ -43,7 +43,7 @@ export default class TodoList extends React.Component {
         super();
         const dUrl = "https://www.reddit.com/r/all/.json";
 
-        axios.get(`http://www.reddit.com/r/all.json`)
+        axios.get(`https://www.reddit.com/r/all.json`)
             .then(res => {
                 //console.log("ny: ", res.data.data.children[0].data.subreddit);
                 allArray = res.data.data.children;
